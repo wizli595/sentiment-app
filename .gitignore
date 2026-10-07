@@ -1,0 +1,35 @@
+# Environnement virtuel : des centaines de Mo, reconstructible
+.venv/
+
+# Bytecode Python, régénéré à chaque exécution
+__pycache__/
+*.pyc
+
+# Secrets : clés d'API, mots de passe
+.env
+
+# Modèles entraînés, lourds et reproductibles
+models/*
+!models/.gitkeep
+
+# Jeux de données
+data/*
+!data/.gitkeep
+!data/sample_reviews.csv
+
+# Traces d'expériences MLflow (semaine 7)
+mlruns/
+
+# Configuration d'éditeur : seule la partie partagée est versionnée
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+
+# Archives et fichiers parasites
+*.zip
+*.pdf
+
+# Caches d'outils
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
